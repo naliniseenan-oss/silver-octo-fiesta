@@ -1,0 +1,102 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Brush Script MT', cursive;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  color: #333;
+}
+.circle-img {
+  width: 200px;       /* adjust size */
+  height: 200px;      /* keep equal width & height */
+  border-radius: 50%; /* makes it circular */
+  object-fit: cover;  /* ensures image fits nicely */
+  border: 4px solid #ff6f61; /* optional: adds border */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* optional: adds shadow */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ff6f61;
+  color: white;
+  padding: 15px 40px;
+}
+
+header .logo {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff6f61;
+}
+
+.project-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input, form textarea, form button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+}
+
+form button {
+  background: #ff6f61;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #e55b4f;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #ff6f61;
+  color: white;
+}
